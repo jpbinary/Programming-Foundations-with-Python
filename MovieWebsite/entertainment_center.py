@@ -20,9 +20,17 @@ print(toy_story.storyline)
 avatar = media.Movie("Avatar",
                     "A marine on an alien planet.",
                     "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",
-                    "https://www.youtube.com/watch?v=d1_JBMrrYw8",)
+                    "https://www.youtube.com/watch?v=d1_JBMrrYw8")
+
+howard_the_duck = media.Movie("Howard the Duck",
+                              "A hero from a duck world lands on earth.",
+                              "https://upload.wikimedia.org/wikipedia/en/7/7f/Howard_the_Duck_%281986%29.jpg",
+                              "https://www.youtube.com/watch?v=M2RNrmCJLtA")
+                              
 
 print(avatar.storyline)
-print(avatar)
+# print(avatar)
     # example output: <media.Movie instance at 0x7fafe22844d0>
+
+howard_the_duck.show_trailer()    
 

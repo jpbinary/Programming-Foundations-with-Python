@@ -1,11 +1,14 @@
 import webbrowser
 
 class Movie():
+    '''This class provides a way to store movie related data.'''
     # best practice is to keep class definition in one file and call class from main file
     # __init__ is also known as a constructor, since it constructs space in memory for the new object
     # __init__ is a reserved word in python
     # self refers to the instance being created
     # self is not a python keyword, it is just a convention, and any other word will also work, such as this_instance
+    VALID_RATINGS = ["G", "PG", "PG-13", "R"]
+        # valid_ratings is a class variable
     def __init__(self, movie_title,
                  movie_storyline,
                  movie_poster_image_url,

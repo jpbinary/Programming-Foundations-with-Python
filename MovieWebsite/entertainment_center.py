@@ -36,5 +36,12 @@ howard_the_duck = media.Movie("Howard the Duck",
 #howard_the_duck.show_trailer()
 
 movies = [toy_story, avatar, howard_the_duck]
-fresh_tomatoes.open_movies_page(movies)
+#fresh_tomatoes.open_movies_page(movies)
 
+print(media.Movie.VALID_RATINGS)
+    # this is a call to a class variable
+
+print(media.Movie.__doc__)
+    # print docstring
+print(media.Movie.__name__)
+print(media.Movie.__module__)

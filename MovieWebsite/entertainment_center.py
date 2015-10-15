@@ -1,6 +1,7 @@
 import media
     # importing contents of the file "media.py" in the same folder
     # importing the module named media (media.py file without the .py extention)
+import fresh_tomatoes
 
 toy_story = media.Movie("Toy Story",
                         "A story about a boy and his toys that come to life.",
@@ -14,7 +15,7 @@ toy_story = media.Movie("Toy Story",
     # this instantiates the object toy_story
     # toy_story is an instance of the class Movie
 
-print(toy_story.storyline)
+#print(toy_story.storyline)
     # toy_story.storyline is an instance variable
 
 avatar = media.Movie("Avatar",
@@ -28,9 +29,12 @@ howard_the_duck = media.Movie("Howard the Duck",
                               "https://www.youtube.com/watch?v=M2RNrmCJLtA")
                               
 
-print(avatar.storyline)
+#print(avatar.storyline)
 # print(avatar)
     # example output: <media.Movie instance at 0x7fafe22844d0>
 
-howard_the_duck.show_trailer()    
+#howard_the_duck.show_trailer()
+
+movies = [toy_story, avatar, howard_the_duck]
+fresh_tomatoes.open_movies_page(movies)
 
